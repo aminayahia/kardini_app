@@ -1,0 +1,56 @@
+#to run project
+
+composer install
+symfony server:start
+
+
+
+#to add controller
+
+symfony console make:controller name_controller
+
+#to add entity
+
+symfony console make:entity
+
+#to upgrade database
+
+symfony console make:migration
+
+symfony console doctrine:migrations:migrate
+
+#pour creer un utilisateur et modifier la configuration de la systeme de securité
+symfony console make:user
+
+
+#pour ceer un formulaire
+symfony console make:form
+
+#pour creer un syteme d'auth
+symfony console make:auth
+
+
+#fixture
+composer require orm-fixtures --dev
+
+symfony console make:fixture
+symfony console doctrine:fixtures:load --append
+symfony console doctrine:fixtures:load --group=user --append
+
+#pour voir toutes la configuration
+
+symfony console debug:config security
+
+#Récupérer l'utilisateur connecté dans le contrôleur, TWIG et service
+on ajoute prop dans class personne
+
+
+
+#partie registration
+
+symfony console make:registration-form
+composer require symfonycasts/verify-email-bundle
+
+
+#Autorisation et access controle
+# dans security.yaml -> access_controle

@@ -1,0 +1,84 @@
+{% extends 'login.html.twig' %}
+
+{% block title %}
+  Inscription
+{% endblock %}
+
+{% block body %}
+  <div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+      <div class="row">
+        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+        <div class="col-lg-6">
+          <div class="p-3">
+            <div class="text-center">
+              <img src="{{ asset('images/logo2.png') }}" alt="logo" class="login-logo" />
+            </div>
+            {% for flash_error in app.flashes('verify_email_error') %}
+              <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+            {% endfor %}
+
+            <div class="text-center">
+              <h1 class="h4 text-gray-900 mb-4">Créer un compte</h1>
+            </div>
+            {{ form_errors(registrationForm) }}
+
+            {{ form_start(registrationForm) }}
+
+            <div class="form-group row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <input name="{{ field_name(registrationForm.lastname) }}" placeholder="nom" class="form-control" />
+              </div>
+              <div class="col-sm-6">
+                <input name="{{ field_name(registrationForm.firstname) }}" placeholder="prénom" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12 mb-3 mb-sm-0">
+              <input name="{{ field_name(registrationForm.address) }}" placeholder="code postal" class="form-control" /></div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <input name="{{ field_name(registrationForm.zipcode) }}" placeholder="code postal" class="form-control" />
+              </div>
+              <div class="col-sm-6">
+                <input name="{{ field_name(registrationForm.city) }}" placeholder="ville" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12 mb-3 mb-sm-0">
+                <input name="{{ field_name(registrationForm.email) }}" placeholder="email" class="form-control" />
+              </div>
+             
+            </div>
+                        <div class="form-group row">
+              <div class="col-sm-12 mb-3 mb-sm-0">
+                <input name="{{ field_name(registrationForm.plainPassword) }}" placeholder="mot de passe" class="form-control" />
+              </div>
+             
+            </div>
+
+     <div class="form-group">
+                    <div class="custom-control custom-checkbox small">
+                      <input type="checkbox" class="custom-control-input" id="customCheck" name="{{ field_name(registrationForm.agreeTerms) }}" />
+                      <label class="custom-control-label" for="customCheck">agreeTerms</label>
+                    </div>
+                  </div>
+
+            <button class="btn btn-primary btn-user btn-block" type="submit">Envoyer</button>
+
+            {{ form_end(registrationForm) }}
+
+            <hr />
+            <div class="text-center">
+              <a class="small" href="forgot-password.html">Forgot Password?</a>
+            </div>
+            <div class="text-center">
+              <a class="small" href="register.html">Create an Account!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
