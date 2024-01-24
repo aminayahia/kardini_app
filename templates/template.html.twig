@@ -37,7 +37,7 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
-                <img src="{{ asset('../assets/images/logo.png') }}" alt="logo" class="icon-logo"/>
+                     <!--<img src="{{ asset('../assets/images/logo.png') }}" alt="logo" class="icon-logo"/>-->
             </div>
             <div class="sidebar-brand-text mx-3">Kardini</div>
         </a>
@@ -327,6 +327,7 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+      
 
 
                 {% for message in app.session.flashBag.get('error') %}
@@ -339,12 +340,12 @@
                         {{ message }}
                     </div>
                 {% endfor %}
-                {% block body %}
+  
+  
+        {% block body %}
                     <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
                 {% endblock %}
-                <!-- Page Heading -->
-
             </div>
             <!-- /.container-fluid -->
 

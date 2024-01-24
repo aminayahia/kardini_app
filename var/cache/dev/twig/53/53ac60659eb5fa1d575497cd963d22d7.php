@@ -91,17 +91,17 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
         <!-- Sidebar - Brand -->
         <a class=\"sidebar-brand d-flex align-items-center justify-content-center\" href=\"index.html\">
             <div class=\"sidebar-brand-icon rotate-n-15\">
-                <img src=\"";
+                     <!--<img src=\"";
         // line 40
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../assets/images/logo.png"), "html", null, true);
-        echo "\" alt=\"logo\" class=\"icon-logo\"/>
+        echo "\" alt=\"logo\" class=\"icon-logo\"/>-->
             </div>
             <div class=\"sidebar-brand-text mx-3\">Kardini</div>
         </a>
 
         <!-- Divider -->
         <hr class=\"sidebar-divider my-0\">
- 
+
         <!-- Nav Item - Dashboard -->
         <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"\">
@@ -199,7 +199,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
                  ";
         }
         // line 123
-        echo "   
+        echo "
     </ul>
     <!-- End of Sidebar -->
 
@@ -409,17 +409,18 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
             <!-- Begin Page Content -->
             <div class=\"container-fluid\">
 
+      
 
 
                 ";
-        // line 332
+        // line 333
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 332, $this->source); })()), "session", [], "any", false, false, false, 332), "flashBag", [], "any", false, false, false, 332), "get", ["error"], "method", false, false, false, 332));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 333, $this->source); })()), "session", [], "any", false, false, false, 333), "flashBag", [], "any", false, false, false, 333), "get", ["error"], "method", false, false, false, 333));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 333
+            // line 334
             echo "                    <div class=\"alert alert-danger\" role=\"alert\">
                         ";
-            // line 334
+            // line 335
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
             echo "
                     </div>
@@ -428,15 +429,15 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 337
+        // line 338
         echo "                ";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 337, $this->source); })()), "session", [], "any", false, false, false, 337), "flashBag", [], "any", false, false, false, 337), "get", ["success"], "method", false, false, false, 337));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 338, $this->source); })()), "session", [], "any", false, false, false, 338), "flashBag", [], "any", false, false, false, 338), "get", ["success"], "method", false, false, false, 338));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 338
+            // line 339
             echo "                    <div class=\"alert alert-success\" role=\"alert\">
                         ";
-            // line 339
+            // line 340
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
             echo "
                     </div>
@@ -445,13 +446,14 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 342
-        echo "                ";
+        // line 343
+        echo "  
+  
+        ";
+        // line 345
         $this->displayBlock('body', $context, $blocks);
-        // line 346
-        echo "                <!-- Page Heading -->
-
-            </div>
+        // line 349
+        echo "            </div>
             <!-- /.container-fluid -->
 
         </div>
@@ -500,23 +502,23 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
 
 <!-- Bootstrap core JavaScript-->
 <script src=\"";
-        // line 396
+        // line 397
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 397
+        // line 398
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
 
 <!-- Core plugin JavaScript-->
 <script src=\"";
-        // line 400
+        // line 401
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/jquery-easing/jquery.easing.min.js"), "html", null, true);
         echo "\"></script>
 
 <!-- Custom scripts for all pages-->
 <script src=\"";
-        // line 403
+        // line 404
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/sb-admin-2.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -552,7 +554,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
 
     }
 
-    // line 342
+    // line 345
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -562,7 +564,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 343
+        // line 346
         echo "                    <h1 class=\"h3 mb-4 text-gray-800\">Blank Page</h1>
 
                 ";
@@ -595,7 +597,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
      */
     public function getDebugInfo()
     {
-        return array (  566 => 343,  556 => 342,  545 => 14,  535 => 13,  520 => 403,  514 => 400,  508 => 397,  504 => 396,  452 => 346,  449 => 342,  440 => 339,  437 => 338,  432 => 337,  423 => 334,  420 => 333,  416 => 332,  397 => 315,  389 => 296,  352 => 262,  337 => 250,  322 => 238,  223 => 142,  202 => 123,  194 => 117,  191 => 116,  161 => 88,  158 => 87,  150 => 82,  141 => 76,  132 => 70,  129 => 69,  127 => 68,  96 => 40,  79 => 26,  75 => 25,  66 => 19,  61 => 16,  59 => 13,  45 => 1,);
+        return array (  568 => 346,  558 => 345,  547 => 14,  537 => 13,  522 => 404,  516 => 401,  510 => 398,  506 => 397,  456 => 349,  454 => 345,  450 => 343,  441 => 340,  438 => 339,  433 => 338,  424 => 335,  421 => 334,  417 => 333,  397 => 315,  389 => 296,  352 => 262,  337 => 250,  322 => 238,  223 => 142,  202 => 123,  194 => 117,  191 => 116,  161 => 88,  158 => 87,  150 => 82,  141 => 76,  132 => 70,  129 => 69,  127 => 68,  96 => 40,  79 => 26,  75 => 25,  66 => 19,  61 => 16,  59 => 13,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -639,14 +641,14 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
         <!-- Sidebar - Brand -->
         <a class=\"sidebar-brand d-flex align-items-center justify-content-center\" href=\"index.html\">
             <div class=\"sidebar-brand-icon rotate-n-15\">
-                <img src=\"{{ asset('../assets/images/logo.png') }}\" alt=\"logo\" class=\"icon-logo\"/>
+                     <!--<img src=\"{{ asset('../assets/images/logo.png') }}\" alt=\"logo\" class=\"icon-logo\"/>-->
             </div>
             <div class=\"sidebar-brand-text mx-3\">Kardini</div>
         </a>
 
         <!-- Divider -->
         <hr class=\"sidebar-divider my-0\">
- 
+
         <!-- Nav Item - Dashboard -->
         <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"\">
@@ -722,7 +724,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
                     <span>Paramétre du compte</span></a>
             </li>
                  {% endif %}
-   
+
     </ul>
     <!-- End of Sidebar -->
 
@@ -929,6 +931,7 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
             <!-- Begin Page Content -->
             <div class=\"container-fluid\">
 
+      
 
 
                 {% for message in app.session.flashBag.get('error') %}
@@ -941,12 +944,12 @@ class __TwigTemplate_5951d6fc8ae3c9e83f2dd69a9ae785be extends Template
                         {{ message }}
                     </div>
                 {% endfor %}
-                {% block body %}
+  
+  
+        {% block body %}
                     <h1 class=\"h3 mb-4 text-gray-800\">Blank Page</h1>
 
                 {% endblock %}
-                <!-- Page Heading -->
-
             </div>
             <!-- /.container-fluid -->
 

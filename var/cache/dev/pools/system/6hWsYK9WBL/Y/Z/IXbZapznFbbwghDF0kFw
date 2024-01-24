@@ -1,0 +1,3 @@
+<?php //5311ec4a8dc66634d721f6565e241239
+
+return [PHP_INT_MAX, 'vendor/bootstrap/js/bootstrap.bundle.min.js.map'];

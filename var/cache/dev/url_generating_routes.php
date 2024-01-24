@@ -19,6 +19,8 @@ return [
     'app_admin' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin/']], [], [], []],
     'app_listeclient' => [[], ['_controller' => 'App\\Controller\\AdminController::clients'], [], [['text', '/admin/listeclient']], [], [], []],
     'app_listevendeur' => [[], ['_controller' => 'App\\Controller\\AdminController::vendeurs'], [], [['text', '/admin/listevendeur']], [], [], []],
+    'detail_client' => [['id'], ['_controller' => 'App\\Controller\\AdminController::detail'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/admin']], [], [], []],
+    'delete_personne' => [['id'], ['_controller' => 'App\\Controller\\AdminController::deletePersonne'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/delete']], [], [], []],
     'app_listereclamations' => [[], ['_controller' => 'App\\Controller\\AdminController::reclamations'], [], [['text', '/admin/listereclamations']], [], [], []],
     'app_client' => [[], ['_controller' => 'App\\Controller\\ClientController::index'], [], [['text', '/client']], [], [], []],
     'app_main' => [[], ['_controller' => 'App\\Controller\\MainController::index'], [], [['text', '/']], [], [], []],

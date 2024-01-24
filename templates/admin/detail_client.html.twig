@@ -1,0 +1,39 @@
+{% extends 'template.html.twig' %}
+{% block title %}detail personne{% endblock %}
+{% block body %}
+{{ client.firstname }}
+<table>
+<tr>
+<td>first Name</td>
+<td>{{ client.firstname }}</td>
+</tr>
+
+<tr>
+<td>last name</td>
+<td>{{ client.lastname }}</td>
+</tr>
+
+<tr>
+<td>email</td>
+<td>{{ client.email }}</td>
+</tr>
+
+<tr>
+<td>adresse</td>
+<td>{{ client.address }}</td>
+</tr>
+
+<tr>
+<td>city</td>
+<td>{{ client.city }}</td>
+</tr>
+
+
+<tr>
+<td>code postal</td>
+<td>{{ client.zipcode }}</td>
+</tr>
+
+
+</table>
+{% endblock %}

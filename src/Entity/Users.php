@@ -183,7 +183,7 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
+  
     public function getCity(): ?string
     {
         return $this->city;

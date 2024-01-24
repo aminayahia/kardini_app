@@ -7,7 +7,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\UsersRepository;
 use App\Entity\Users;
-use App\Controller\ManagerRegistry;
+
+
+use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
+
+
 #[
     Route('admin'),
     IsGranted('ROLE_ADMIN')
@@ -48,7 +54,44 @@ class AdminController extends AbstractController
             'controller_name' => 'AdminController',
             //'clients' => $clients,
         ]);
-    }     
+    }    
+  
+    #[Route('/{id<\d+>}', name: 'detail_client')]
+    public function detail(ManagerRegistry $doctrine,$id): Response
+    {
+        $repository= $doctrine->getRepository(Users::class);
+        $client = $repository->find($id);
+        if(!$client){
+            $this->addFlash("error","la personne $id n'exsite pas");
+            return $this->redirectToRoute('list_personne');
+        }
+        return $this->render('admin/detail_client.html.twig',['client'=>$client]);
+    }
+
+
+    #[Route('/delete/{id}', name: 'delete_personne')]
+    public function deletePersonne(Users $personne = null,ManagerRegistry $doctrine): RedirectResponse
+    {
+        // recuperer la personne
+
+
+        //si la personne existe => supprimer et retunrner un msg
+        if($personne){
+            $manager = $doctrine->getManager();
+            $manager->remove($personne);
+
+            $manager->flush();
+            $this->addFlash('success','la personne a été bien supprimé');
+        }else{
+            $this->addFlash('errer','la personne inexsitante');
+
+        }
+        
+return $this->redirectToRoute('app_listeclient');
+    }
+
+
+
     #[Route('/listereclamations', name: 'app_listereclamations')]
     public function reclamations(): Response
     {    

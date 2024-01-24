@@ -127,47 +127,63 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
         // line 26
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 26, $this->source); })()), 'form_start');
         echo "
+              <div class=\"form-group\">
+                  <div class=\"custom-control custom-radio small\">
 
+                      ";
+        // line 30
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 30, $this->source); })()), "status", [], "any", false, false, false, 30), 'label');
+        echo "
+                      ";
+        // line 31
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 31, $this->source); })()), "status", [], "any", false, false, false, 31), 'widget');
+        echo "
+                      ";
+        // line 32
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 32, $this->source); })()), "status", [], "any", false, false, false, 32), 'errors');
+        echo "
+                  </div>
+              </div>
             <div class=\"form-group row\">
               <div class=\"col-sm-6 mb-3 mb-sm-0\">
                 <input name=\"";
-        // line 30
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 30, $this->source); })()), "lastname", [], "any", false, false, false, 30)), "html", null, true);
+        // line 37
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 37, $this->source); })()), "lastname", [], "any", false, false, false, 37)), "html", null, true);
         echo "\" placeholder=\"nom\" class=\"form-control\" />
               </div>
               <div class=\"col-sm-6\">
                 <input name=\"";
-        // line 33
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 33, $this->source); })()), "firstname", [], "any", false, false, false, 33)), "html", null, true);
+        // line 40
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 40, $this->source); })()), "firstname", [], "any", false, false, false, 40)), "html", null, true);
         echo "\" placeholder=\"prénom\" class=\"form-control\" />
               </div>
             </div>
             <div class=\"form-group row\">
               <div class=\"col-sm-12 mb-3 mb-sm-0\">
               <input name=\"";
-        // line 38
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 38, $this->source); })()), "address", [], "any", false, false, false, 38)), "html", null, true);
+        // line 45
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 45, $this->source); })()), "address", [], "any", false, false, false, 45)), "html", null, true);
         echo "\" placeholder=\"code postal\" class=\"form-control\" /></div>
             </div>
             <div class=\"form-group row\">
               <div class=\"col-sm-6 mb-3 mb-sm-0\">
                 <input name=\"";
-        // line 42
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 42, $this->source); })()), "zipcode", [], "any", false, false, false, 42)), "html", null, true);
+        // line 49
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 49, $this->source); })()), "zipcode", [], "any", false, false, false, 49)), "html", null, true);
         echo "\" placeholder=\"code postal\" class=\"form-control\" />
               </div>
               <div class=\"col-sm-6\">
                 <input name=\"";
-        // line 45
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 45, $this->source); })()), "city", [], "any", false, false, false, 45)), "html", null, true);
+        // line 52
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 52, $this->source); })()), "city", [], "any", false, false, false, 52)), "html", null, true);
         echo "\" placeholder=\"ville\" class=\"form-control\" />
               </div>
             </div>
             <div class=\"form-group row\">
               <div class=\"col-sm-12 mb-3 mb-sm-0\">
                 <input name=\"";
-        // line 50
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 50, $this->source); })()), "email", [], "any", false, false, false, 50)), "html", null, true);
+        // line 57
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 57, $this->source); })()), "email", [], "any", false, false, false, 57)), "html", null, true);
         echo "\" placeholder=\"email\" class=\"form-control\" />
               </div>
              
@@ -175,8 +191,8 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
                         <div class=\"form-group row\">
               <div class=\"col-sm-12 mb-3 mb-sm-0\">
                 <input name=\"";
-        // line 56
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 56, $this->source); })()), "plainPassword", [], "any", false, false, false, 56)), "html", null, true);
+        // line 63
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 63, $this->source); })()), "plainPassword", [], "any", false, false, false, 63)), "html", null, true);
         echo "\" placeholder=\"mot de passe\" class=\"form-control\" />
               </div>
              
@@ -185,8 +201,8 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
      <div class=\"form-group\">
                     <div class=\"custom-control custom-checkbox small\">
                       <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck\" name=\"";
-        // line 63
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 63, $this->source); })()), "agreeTerms", [], "any", false, false, false, 63)), "html", null, true);
+        // line 70
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\FormExtension']->getFieldName(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 70, $this->source); })()), "agreeTerms", [], "any", false, false, false, 70)), "html", null, true);
         echo "\" />
                       <label class=\"custom-control-label\" for=\"customCheck\">agreeTerms</label>
                     </div>
@@ -195,8 +211,8 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
             <button class=\"btn btn-primary btn-user btn-block\" type=\"submit\">Envoyer</button>
 
             ";
-        // line 70
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 70, $this->source); })()), 'form_end');
+        // line 77
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 77, $this->source); })()), 'form_end');
         echo "
 
             <hr />
@@ -241,7 +257,7 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
      */
     public function getDebugInfo()
     {
-        return array (  199 => 70,  189 => 63,  179 => 56,  170 => 50,  162 => 45,  156 => 42,  149 => 38,  141 => 33,  135 => 30,  128 => 26,  123 => 24,  117 => 20,  108 => 18,  104 => 17,  99 => 15,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  215 => 77,  205 => 70,  195 => 63,  186 => 57,  178 => 52,  172 => 49,  165 => 45,  157 => 40,  151 => 37,  143 => 32,  139 => 31,  135 => 30,  128 => 26,  123 => 24,  117 => 20,  108 => 18,  104 => 17,  99 => 15,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -272,7 +288,14 @@ class __TwigTemplate_ef8b1a3040efc6572a80a2d457cb711c extends Template
             {{ form_errors(registrationForm) }}
 
             {{ form_start(registrationForm) }}
+              <div class=\"form-group\">
+                  <div class=\"custom-control custom-radio small\">
 
+                      {{ form_label(registrationForm.status) }}
+                      {{ form_widget(registrationForm.status) }}
+                      {{ form_errors(registrationForm.status) }}
+                  </div>
+              </div>
             <div class=\"form-group row\">
               <div class=\"col-sm-6 mb-3 mb-sm-0\">
                 <input name=\"{{ field_name(registrationForm.lastname) }}\" placeholder=\"nom\" class=\"form-control\" />
