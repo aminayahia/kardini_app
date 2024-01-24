@@ -1,0 +1,3 @@
+<?php //5b66c8e0aa315a3655cf74426c26f440
+
+return [PHP_INT_MAX, 'vendor/jquery/jquery.min.js'];

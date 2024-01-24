@@ -47,11 +47,11 @@ class UsersRepository extends ServiceEntityRepository implements PasswordUpgrade
             ->getQuery()
             ->getSingleScalarResult();
     }
-    public function findByRole($role)
+    public function findClients()
     {
         return $this->createQueryBuilder('u')
-            ->andWhere(':role MEMBER OF u.roles')
-            ->setParameter('role', $role)
+            ->andWhere('u.roles LIKE :role')
+            ->setParameter('role', '%ROLE_CLIENT%')
             ->getQuery()
             ->getResult();
     }

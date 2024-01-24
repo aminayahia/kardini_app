@@ -25,7 +25,7 @@ class UsersFixtures extends Fixture
        $admin1->setZipcode('2080');
        $admin1->setCreatedAt($dateTimeService);
        $admin1->setCity('ariana');
-
+        $admin1->setStatus('admin');
        $client = new Users();
        $client->setEmail("client@gmail.com");
        $client->setPassword($this->hacher->hashPassword($client,'client'));
@@ -36,7 +36,7 @@ class UsersFixtures extends Fixture
        $client->setZipcode('2080');
        $client->setCreatedAt($dateTimeService);
        $client->setCity('ariana');
-
+        $client->setStatus('client');
        $vendeur = new Users();
        $vendeur->setEmail("vendeur@gmail.com");
        $vendeur->setPassword($this->hacher->hashPassword($vendeur,'vendeur'));
@@ -47,6 +47,7 @@ class UsersFixtures extends Fixture
        $vendeur->setZipcode('2080');
        $vendeur->setCreatedAt($dateTimeService);
        $vendeur->setCity('ariana');
+        $vendeur->setStatus('vendeur');
      /*  for($i=1;$i<=5;$i++){
            $user = new User();
            $user->setEmail("user$i@gmail.com");

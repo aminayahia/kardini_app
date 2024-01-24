@@ -4,9 +4,42 @@
 
 {% block body %}
 
+<div class="card shadow mb-4">
+   <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Liste des clients</h6>
+   </div>
+   <div class="card-body">
+      <div class="table-responsive">
 
-<div>
-   liste des clients
-  
+   <table class="table table-bordered" id="dataTable" >
+      <thead>
+      <tr>
+         <th>firstname</th>
+         <th>lastname</th>
+         <th>email</th>
+         <th>address</th>
+         <th>city</th>
+         <th>Actions</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {% for client in clients %}
+      <tr>
+         <td>{{ client.firstname }}</td>
+         <td>{{ client.lastname }}</td>
+         <td>{{ client.email }}</td>
+         <td>{{ client.address }}</td>
+         <td>{{ client.city }}</td>
+         <td><i class="fas fa-trash"></i></td>
+      </tr>
+      {% endfor %}
+
+      </tbody>
+   </table>
+
+      </div>
+   </div>
 </div>
+
 {% endblock %}

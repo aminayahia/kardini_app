@@ -30,13 +30,13 @@ class AdminController extends AbstractController
         ]);
     }
     #[Route('/listeclient', name: 'app_listeclient')]
-    public function clients(): Response
-    {    
-       /* $repository = $doctrine->getRepository(Users::class);
-        $clients = $repository->findAll();*/
+    public function clients(UsersRepository $userRepository): Response
+    {
+        $clients = $userRepository->findClients();
+
         return $this->render('admin/clients.html.twig', [
             'controller_name' => 'AdminController',
-            //'clients' => $clients,
+            'clients' => $clients,
         ]);
     } 
     #[Route('/listevendeur', name: 'app_listevendeur')]

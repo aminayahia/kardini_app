@@ -1,0 +1,3 @@
+<?php //16732799b4e2176b4770a7f11b4b5f60
+
+return [PHP_INT_MAX, 'images/logo.png'];
